@@ -19,6 +19,11 @@
       https://localhost:8050/inventory/priceIncrease     -->(max 1 to 50)                    POST
       https://localhost:8050/inventory/view/{id}         --> deleteById                      POST
       
+ # Command :
+        mvn clean install - Plain maven clean and install
+          
+         
+      
       
       
       
