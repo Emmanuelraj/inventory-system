@@ -6,7 +6,7 @@
        user can view the products & delete the products
       
                  http://jean-luc.massat.perso.luminy.univ-amu.fr/ens/jee/doc-spring-mvc/images/usecase.png
-        user can change the price as (percent %) 
+        user can change the price as (increasePercentage %) it reflect all products
         
         
 # Url : 
