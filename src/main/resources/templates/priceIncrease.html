@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link type="text/css" rel="stylesheet" th:href="@{/assets/css/styles.css}"></link>
+
+<title>Price Increase</title>
+</head>
+<body>
+    
+     <h1>Price Increase ::  <i th:text="${headerMsg}"></i></h1>   
+  
+   <form action="#" th:action="@{/inventory/priceIncrease}" th:object="${priceIncrease}" method="post" id="form">
+            <td>Increase (%) :</td>
+            <td><input type="number" th:field="*{percentage}" /></td>
+            <td th:if="${#fields.hasErrors('percentage')}" th:errors="*{percentage}">Don't be Greedy-you can't raise price more than 50%</td>
+       
+          <td><button type="submit">Execute</button></td>
+       
+       
+          
+   </form>
+   
+   <div  id="btn-link">
+              <a  class="button" th:href="@{'/inventory/viewProducts.htm'}">Home</a>
+              
+              <a   class="button" th:href="@{'/inventory/addProducts.htm'}">Add products</a> 
+   </div>         
+            
+</body>
+</html>

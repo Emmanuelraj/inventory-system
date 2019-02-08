@@ -1,0 +1,45 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link type="text/css" rel="stylesheet" th:href="@{/assets/css/styles.css}"></link>
+
+<title>Add Products</title>
+</head>
+<body>
+        
+       <form action="#" th:action="@{/inventory/load}" th:object="${product}" method="post">
+              <h1> Add Products</h1>
+                <p>Greetings, it is now, <i th:text="${user}"></i>  </p>
+          
+               <table  id="wrapper">
+                <tr>
+                    <td>Description:</td>
+                    <td><input type="text" th:field="*{description}" /></td>
+                    <td th:if="${#fields.hasErrors('description')}" th:errors="*{description}" required>Description Error</td>
+                </tr>
+                <tr>
+                    <td>Price:</td>
+                    <td><input type="number" th:field="*{price}" /></td>
+                    <td th:if="${#fields.hasErrors('price')}" th:errors="*{price}" required>Price Error</td>
+                </tr>
+                
+                
+                
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+             
+         
+       </form>
+       
+       <div id="btn-link">
+       
+        <a class="button" th:href="@{'/inventory/viewProducts.htm'}">View products</a> 
+        
+        
+        
+         <a class="button" th:href="@{'/inventory/priceIncrease.htm'}">Increase Price</a>
+         </div>
+</body>
+</html>

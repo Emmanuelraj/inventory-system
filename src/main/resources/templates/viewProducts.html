@@ -1,0 +1,42 @@
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link type="text/css" rel="stylesheet" th:href="@{/assets/css/styles.css}"></link>
+<title>View Products</title>
+</head>
+<body>
+
+     <h1>Hello::Spring Application</h1>
+     <p>Greetings, it is now, <i th:text="${user}"></i>  </p>
+     
+     
+   <table id="wrapper">  
+   
+   
+   
+     <tr th:each="product: ${products}">
+     
+    <td th:text="${product.id}" />
+    <td th:text="${product.description}" />
+     <td th:text="${product.price}" />
+     
+      <td>
+                         <a class="button"  th:href="@{'/inventory/view/'+${product.id}}">Delete</a>
+                  </td>
+   
+   </tr>
+   
+    
+       
+     </table>
+     
+     <div id="btn-link">
+    
+ <a  class ="button" th:href="@{'/inventory/priceIncrease.htm'}">IncreasePrice</a>
+ 
+ 
+  <a class="button"  th:href="@{'/inventory/addProducts.htm'}">Add Products</a>
+ 
+ </div>
+</body>
+</html>
