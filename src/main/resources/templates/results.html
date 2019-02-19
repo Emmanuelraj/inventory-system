@@ -2,12 +2,26 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Results</title>
+<link type="text/css" rel="stylesheet" th:href="@{/assets/css/styles.css}"></link>
+
 </head>
 <body>
-       Congratulations ! products price get updated
+
+    <div class="container">
+        <h1> Congratulations ! products price get updated !!! </h1> 
+    </div>   
        
        
+       <div id="btn-link">
        
+         <a class="button"  th:href="@{'/inventory/addProducts.htm'}">Add Products</a>
+         
+           <a class="button" th:href="@{'/inventory/viewProducts.htm'}">View products</a> 
+        
+        
+      
+         
+       </div>
 
 </body>
 </html>
