@@ -18,6 +18,9 @@
       https://localhost:8050/inventory/priceIncrease.htm --> Get (%)                         POST
       https://localhost:8050/inventory/priceIncrease     -->(max 1 to 50)                    POST
       https://localhost:8050/inventory/view/{id}         --> deleteById                      POST
+
+# Interceptor
+       For further details : https://github.com/Emmanuelraj/inventory-system/blob/interceptor/README.md
       
  # Command :
         mvn clean install - Plain maven clean and install
