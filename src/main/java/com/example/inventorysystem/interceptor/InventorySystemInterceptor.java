@@ -54,13 +54,13 @@ public class InventorySystemInterceptor implements HandlerInterceptor
 	
 	
 	
-	@Override
+	//@Override
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
 		
 		System.out.println("after completion method in interceptor");
 		// TODO Auto-generated method stub
-		HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
+		//HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
 	}
 	
 	

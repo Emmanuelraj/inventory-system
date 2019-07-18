@@ -1,5 +1,7 @@
 package com.example.inventorysystem.runner;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -15,9 +17,11 @@ public class ProductRunner implements CommandLineRunner
 	@Autowired
 	private ProductRepository productRepository;
 
-	@Override
+	private static Log logger = LogFactory.getLog(ProductRunner.class);
+	
 	public void run(String... args) throws Exception 
 	{
+		logger.info("commandLineRunner method");
 		try {
 			// TODO Auto-generated method stub
 			Product product1 = new Product("Chair", 160.0);	
@@ -34,4 +38,5 @@ public class ProductRunner implements CommandLineRunner
 		}
 	}
 
+	
 }
