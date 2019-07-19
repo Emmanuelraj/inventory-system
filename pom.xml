@@ -8,7 +8,7 @@
 		<version>2.1.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com</groupId>
+	<groupId>com.example</groupId>
 	<artifactId>inventory-system</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>inventory-system</name>
@@ -21,7 +21,14 @@
 	</properties>
 
 	<dependencies>
+	<!-- eureke-client -->
 	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+	<!-- Thymeleaf -->
+	<dependency>
+
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>

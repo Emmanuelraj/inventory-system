@@ -1,0 +1,15 @@
+server:
+      port=8050
+management:
+   security:
+      enabled: false  
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka
+      instance:
+      preferIpAddress: true
+spring:
+   application:
+      name: inventory-system
+      
