@@ -18,6 +18,10 @@
 # Interceptor
        For further details : https://github.com/Emmanuelraj/inventory-system/blob/interceptor/README.md      
  # Command :
+        git clone -b inventory-system-eureka-server  https://github.com/Emmanuelraj/inventory-system.git
+        syntax:
+        git clone -b branchname url of repo
+        
         mvn clean install - Plain maven clean and install
           
          
