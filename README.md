@@ -8,6 +8,7 @@
 # UseCaseDiagram                  
         user can change the price as (increasePercentage %) it reflect all products             
 # Url : 
+      http://localhost:8761/ ------------------------------> eureka server (first run eureka server)
       https://localhost:8050/inventory/viewProducts.htm  --> view All Products               GET
       https://localhost:8050/inventory/addProducts.htm   --> Add Products                    GET
       https://localhost:8050/inventory/load              --> Add Products                    POST 
