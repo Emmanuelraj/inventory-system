@@ -10,7 +10,6 @@ Eureka Server is also known as Discovery Server.
 # Environment 
       Spring-boot
       Eureka --->
-      Docker 
       application.yml+application.properties
       
 # command :  
